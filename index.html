@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surya Flowers</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <h1>Surya Flowers</h1>
+      <p class="tagline">Fresh flowers, hand-delivered with love</p>
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <h2>Bouquets for every moment</h2>
+      <p>Brighten someone's day with a hand-picked bouquet.</p>
+      <a class="btn" href="#shop">Shop Now</a>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="shop" class="grid">
+      <h2 class="section-title">Featured Bouquets</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=800&q=80" alt="Roses bouquet">
+          <h3>Classic Roses</h3>
+          <p>6 red roses arranged with greenery.</p>
+          <div class="card-footer">
+            <span class="price">$29</span>
+            <button class="btn small" data-name="Classic Roses">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?w=800&q=80" alt="Mixed bouquet">
+          <h3>Sunny Mix</h3>
+          <p>Bright seasonal flowers to lift the spirits.</p>
+          <div class="card-footer">
+            <span class="price">$34</span>
+            <button class="btn small" data-name="Sunny Mix">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=800&q=80" alt="Pastel bouquet">
+          <h3>Pastel Dreams</h3>
+          <p>Soft pastel arrangement for special moments.</p>
+          <div class="card-footer">
+            <span class="price">$39</span>
+            <button class="btn small" data-name="Pastel Dreams">Add to cart</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">About Surya Flowers</h2>
+      <p>We are a small local florist dedicated to creating beautiful, sustainable arrangements for every occasion.</p>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact Us</h2>
+      <form id="contactForm" class="contact-form">
+        <label>
+          Name
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Surya Flowers — All rights reserved.</p>
+      <div class="social">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
