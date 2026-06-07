@@ -1,0 +1,49 @@
+:root{
+  --bg:#fff7fb;
+  --text:#3a1630;
+  --accent:#e91e63; /* pink */
+  --muted:#8a5a6f;
+  --container:1100px;
+  --radius:12px;
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, system-ui;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);line-height:1.5}
+.container{max-width:var(--container);margin:0 auto;padding:1rem}
+
+.site-header{background:linear-gradient(90deg,#ffd9e6, #fff);border-bottom:1px solid rgba(0,0,0,0.06)}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:1rem}
+.logo{margin:0;font-size:1.5rem;font-weight:800;color:var(--accent);letter-spacing:1px}
+.sub{margin:0;color:var(--muted);font-weight:600}
+.top-nav a{margin-left:1rem;text-decoration:none;color:var(--muted);font-weight:600}
+.order-btn{background:var(--accent);color:#fff;padding:.5rem .8rem;border-radius:24px;text-decoration:none;margin-left:1rem}
+
+.hero{padding:2.5rem 0}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:1rem;align-items:center}
+.hero-left h2{font-size:2rem;margin:0;color:var(--text)}
+.lead{color:var(--muted);max-width:60ch}
+.cta{display:inline-block;background:var(--accent);color:#fff;padding:.6rem 1rem;border-radius:8px;text-decoration:none;font-weight:700}
+.contacts a{color:var(--text);text-decoration:none}
+.hero-image img{width:100%;max-width:420px}
+
+.section{padding:2rem 0}
+.services .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
+.card{padding:1rem;border-radius:var(--radius);background:#fff;border:1px solid rgba(0,0,0,0.04)}
+.card h4{margin:0 0 .5rem;color:var(--accent)}
+
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem;margin-top:1rem}
+.gallery-grid figure{background:#fff;border-radius:12px;padding:.6rem;text-align:center;border:1px solid rgba(0,0,0,0.04)}
+.gallery-grid img{width:100%;height:120px;object-fit:contain}
+.gallery-grid figcaption{margin-top:.4rem;font-weight:700;color:var(--muted)}
+
+.contact-grid{display:grid;grid-template-columns:1fr;gap:1rem}
+.info-box{background:#fff;padding:1rem;border-radius:12px;border:1px solid rgba(0,0,0,0.04)}
+.info-box h4{margin-top:0;color:var(--accent)}
+.info-box ul{padding-left:1.2rem}
+
+.site-footer{border-top:1px solid rgba(0,0,0,0.04);padding:1rem 0;text-align:center;color:var(--muted);font-size:.95rem}
+
+@media(min-width:900px){
+  .hero-grid{grid-template-columns:1fr 420px}
+  .contact-grid{grid-template-columns:1fr 320px}
+}

@@ -1,104 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Surya Flowers</title>
-  <link rel="stylesheet" href="assets/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SURYA FLOWERS — Eluru</title>
+  <meta name="description" content="SURYA FLOWERS — Door delivery service in Eluru. Fresh flowers, bouquets, garlands, decorations. Order on WhatsApp." />
+  <link rel="stylesheet" href="styles.css" />
+  <meta property="og:title" content="SURYA FLOWERS — Eluru" />
+  <meta property="og:description" content="Fresh flowers | On-time delivery | Order on WhatsApp" />
 </head>
 <body>
-  <header>
-    <div class="container header-inner">
-      <h1>Surya Flowers</h1>
-      <p class="tagline">Fresh flowers, hand-delivered with love</p>
-      <nav class="main-nav">
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <h1 class="logo">SURYA FLOWERS</h1>
+        <p class="sub">Door Delivery Service — Eluru</p>
+      </div>
+      <nav class="top-nav">
         <a href="#home">Home</a>
-        <a href="#shop">Shop</a>
-        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
+        <a class="order-btn" href="https://wa.me/919381526635?text=Hello%20Surya%20Flowers%2C%20I%20would%20like%20to%20place%20an%20order">Order Now</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero" id="home">
-    <div class="container hero-content">
-      <h2>Bouquets for every moment</h2>
-      <p>Brighten someone's day with a hand-picked bouquet.</p>
-      <a class="btn" href="#shop">Shop Now</a>
-    </div>
-  </section>
-
-  <main class="container">
-    <section id="shop" class="grid">
-      <h2 class="section-title">Featured Bouquets</h2>
-      <div class="cards">
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=800&q=80" alt="Roses bouquet">
-          <h3>Classic Roses</h3>
-          <p>6 red roses arranged with greenery.</p>
-          <div class="card-footer">
-            <span class="price">$29</span>
-            <button class="btn small" data-name="Classic Roses">Add to cart</button>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?w=800&q=80" alt="Mixed bouquet">
-          <h3>Sunny Mix</h3>
-          <p>Bright seasonal flowers to lift the spirits.</p>
-          <div class="card-footer">
-            <span class="price">$34</span>
-            <button class="btn small" data-name="Sunny Mix">Add to cart</button>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=800&q=80" alt="Pastel bouquet">
-          <h3>Pastel Dreams</h3>
-          <p>Soft pastel arrangement for special moments.</p>
-          <div class="card-footer">
-            <span class="price">$39</span>
-            <button class="btn small" data-name="Pastel Dreams">Add to cart</button>
-          </div>
-        </article>
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h2>We deliver happiness with freshness</h2>
+          <p class="lead">Fresh & premium flowers delivered on time across Eluru. Fast same-day delivery — Delivery charges ₹50 (All areas in Eluru).</p>
+          <p class="contacts">
+            <strong>WhatsApp:</strong> <a href="https://wa.me/919381526635">+91 93815 26635</a> &nbsp; | &nbsp; <a href="tel:+9190522333126">+91 90522 33126</a>
+          </p>
+          <p>
+            <a class="cta" href="https://wa.me/919381526635?text=Hello%20Surya%20Flowers%2C%20I%20would%20like%20to%20order">Order on WhatsApp</a>
+          </p>
+        </div>
+        <div class="hero-image">
+          <img src="assets/hero.svg" alt="Bouquet" />
+        </div>
       </div>
     </section>
 
-    <section id="about">
-      <h2 class="section-title">About Surya Flowers</h2>
-      <p>We are a small local florist dedicated to creating beautiful, sustainable arrangements for every occasion.</p>
+    <section id="services" class="section services">
+      <div class="container">
+        <h3>Our Services</h3>
+        <div class="cards">
+          <div class="card"> 
+            <h4>Daily Flower Delivery</h4>
+            <p>Fresh flowers delivered to your door daily.</p>
+          </div>
+          <div class="card"> 
+            <h4>Temple Flower Supply</h4>
+            <p>Flowers for temples, poojas & special rituals.</p>
+          </div>
+          <div class="card"> 
+            <h4>Festival Flower Orders</h4>
+            <p>All types of flowers for festivals & occasions.</p>
+          </div>
+          <div class="card"> 
+            <h4>Special Occasion Delivery</h4>
+            <p>Birthdays, anniversaries & customized orders.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2 class="section-title">Contact Us</h2>
-      <form id="contactForm" class="contact-form">
-        <label>
-          Name
-          <input type="text" name="name" required>
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" required>
-        </label>
-        <label>
-          Message
-          <textarea name="message" rows="4" required></textarea>
-        </label>
-        <button class="btn" type="submit">Send Message</button>
-      </form>
+    <section id="gallery" class="section gallery">
+      <div class="container">
+        <h3>Our Flower Collection</h3>
+        <div class="gallery-grid">
+          <figure>
+            <img src="assets/rose.svg" alt="Rose bouquet"/>
+            <figcaption>Rose Bouquet</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/garland.svg" alt="Garlands"/>
+            <figcaption>Garlands</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/marigold.svg" alt="Marigold flowers"/>
+            <figcaption>Marigold</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/bouquet.svg" alt="Bouquets"/>
+            <figcaption>Bouquets</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/basket.svg" alt="Flower baskets"/>
+            <figcaption>Flower Baskets</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/decor.svg" alt="Decorations"/>
+            <figcaption>Decorations</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container contact-grid">
+        <div>
+          <h3>Contact Us</h3>
+          <p><strong>Phone / WhatsApp</strong>: <a href="https://wa.me/919381526635">+91 93815 26635</a>, <a href="tel:+9190522333126">+91 90522 33126</a></p>
+          <p><strong>Instagram</strong>: <a href="https://instagram.com/suryaflowers926" target="_blank">@suryaflowers926</a></p>
+          <p><strong>Location</strong>: Eluru, Andhra Pradesh</p>
+          <p><a class="cta outline" href="https://wa.me/919381526635?text=Hello%20Surya%20Flowers%2C%20I%20would%20like%20to%20place%20an%20order">Order on WhatsApp</a></p>
+        </div>
+        <div class="info-box">
+          <h4>Why choose us?</h4>
+          <ul>
+            <li>Fresh & premium quality flowers</li>
+            <li>On-time door delivery</li>
+            <li>Affordable prices</li>
+            <li>Customized orders available</li>
+          </ul>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container footer-inner">
-      <p>&copy; <span id="year"></span> Surya Flowers — All rights reserved.</p>
-      <div class="social">
-        <a href="#">Instagram</a>
-        <a href="#">Facebook</a>
-      </div>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> SURYA FLOWERS — All rights reserved. Delivery charges ₹50 (All areas in Eluru).</p>
     </div>
   </footer>
 
-  <script src="assets/script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
